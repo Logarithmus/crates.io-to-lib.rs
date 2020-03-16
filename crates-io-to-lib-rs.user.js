@@ -11,6 +11,8 @@
 (function() {
     const regex = /(.*?\:\/\/)crates\.io(.*)/
     for (let a of document.getElementsByTagName("a")) {
-        a.href = a.href.replace(regex, "$1lib.rs$2")
+        if (a.hasAttribute("href")) {
+        	a.href = a.href.replace(regex, "$1lib.rs$2")
+        }
     }
 })();
