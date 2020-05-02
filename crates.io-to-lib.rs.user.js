@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         crates.io -> lib.rs
+// @name         Redirect from crates.io to lib.rs
 // @version      0.1.5
 // @license      GPL-3.0-only; http://www.gnu.org/licenses/gpl-3.0.txt
 // @homepageURL  https://github.com/Logarithmus/crates-io-to-lib-rs
