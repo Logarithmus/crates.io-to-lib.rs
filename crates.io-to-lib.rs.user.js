@@ -19,7 +19,8 @@
     for (let a of document.getElementsByTagName("a")) {
         // Only modify relevant <a> tags to avoid breaking sites
         if (a.hostname === "crates.io"
-         && a.pathname.indexOf("/crates/") === 0) {
+         && (a.pathname.indexOf("/crates/") === 0
+         || a.pathname.indexOf("/keywords/") === 0)) {
             a.hostname = "lib.rs"
         }
     }
